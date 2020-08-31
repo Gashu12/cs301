@@ -23,8 +23,13 @@ function myChristMassDayGifts(number){
   let numberOfGifts = myGiftsongs.slice(1, number);
   numberOfGifts.reverse();
   
-  console.log('on my ' + myDayString.pop() + 'day of christmass my true love gave to me:\n ' + numberOfGifts 
-  + ', \nand ' + myGiftsongs[0])
+    if(number === 1){
+    console.log('on my ' + myDayString.pop() + 'day of christmass my true love gave to me: ' + myGiftsongs[0])
+    }
+    else{
+    console.log('on my ' + myDayString.pop() + 'day of christmass my true love gave to me:\n ' + numberOfGifts 
+    + ', \nand ' + myGiftsongs[0])
+    }
 
 }
 
