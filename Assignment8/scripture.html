@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+<title>Applied Scripture</title>
+    <script>
+
+        function applyScripture() {
+
+            let name = document.getElementById('nameInputBox').value;
+
+            let scripture = name + "! Be strong and courageous. " + 
+            "Do not be afraid or terrified because of them, " + 
+            " or the LORD your God goes with you; " + 
+                " he will never leave you nor forsake you.";
+
+            document.getElementById('outputDiv').innerHTML = scripture;
+        }
+    </script>
+</head>
+<body>
+    Please enter your name: <input type="text" id="nameInputBox"/><br>
+    <button type="button" onclick="applyScripture()">click to see your scripture</button>
+    <div id="outputDiv"></div>
+</body>
+</html>
+

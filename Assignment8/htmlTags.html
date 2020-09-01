@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+<title>student information</title>
+    <script>
+
+        function getStudentInfo() {
+
+            let name = document.getElementById('nameInputBox').value;
+
+            let idNumber = document.getElementById('IdInputBox').value;
+            let studentInfo = name + ' ' + idNumber;
+            document.getElementById('outputDiv').innerHTML = studentInfo;
+        }
+    </script>
+</head>
+<body>
+    Enter your name: <input type="text" id="nameInputBox"/><br>
+    Enter your ID number <input type="text" id="IdInputBox"/><br>
+    <button type="button" onclick="getStudentInfo()">click to see your name and id</button>
+    <div id="outputDiv"></div>
+</body>
+</html>

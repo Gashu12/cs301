@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>A Program to Say Hello</title>
+</head>
+<body>
+    <script>
+    function greetUser() {
+
+        let name = prompt("Please enter your name");
+        let greeting = "How are you " + name + ". how is everything going on."
+        document.getElementById('output').innerHTML = greeting;
+    }
+    </script>
+    <p id="output"></p>
+    <button type="button" onclick="greetUser()">Hello</button>
+</body>
+</html>
